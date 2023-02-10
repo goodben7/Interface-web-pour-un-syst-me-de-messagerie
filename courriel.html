@@ -1,0 +1,85 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mon interface de courriel</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Mon interface de courriel</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#inbox">Boîte de réception</a></li>
+        <li><a href="#compose">Composer un message</a></li>
+        <li><a href="#address-book">Carnet d'adresses</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section id="inbox">
+        <h2>Boîte de réception</h2>
+        <form action="#">
+          <input type="text" placeholder="Rechercher un message">
+          <button type="submit">Rechercher</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>Expéditeur</th>
+              <th>Objet</th>
+              <th>Date</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>Bienvenue sur mon interface de courriel</td>
+              <td>10 février 2023</td>
+            </tr>
+            <tr>
+              <td>Jane Doe</td>
+              <td>Rendez-vous important</td>
+              <td>9 février 2023</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section id="compose">
+        <h2>Composer un message</h2>
+        <form action="#">
+          <label for="to">À:</label>
+          <input type="email" id="to" required>
+          <label for="subject">Objet:</label>
+          <input type="text" id="subject" required>
+          <label for="message">Message:</label>
+          <textarea id="message" required></textarea>
+          <button type="submit">Envoyer</button>
+        </form>
+      </section>
+      <section id="address-book">
+        <h2>Carnet d'adresses</h2>
+        <form action="#">
+          <input type="text" placeholder="Rechercher un contact">
+          <button type="submit">Rechercher</button>
+        </form>
+        <table>
+          <thead>
+            <tr>
+              <th>Nom</th>
+              <th>Adresse e-mail</th>
+              <th>Numéro de téléphone</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>johndoe@gmail.com</td>
+              <td>+243 828120996</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
